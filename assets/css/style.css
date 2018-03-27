@@ -1,0 +1,396 @@
+* {
+    box-sizing:border-box;
+}
+
+#header {
+    width: 100%;
+    background: #ffffff;
+    height: 50px;
+    position: fixed;
+    border-bottom: solid 2px #cccccc;
+    top: 0px;
+    z-index: 2;
+}
+
+#border {
+    padding: 0px;
+    margin: 0px;
+    height: 2px;
+    background: #cccccc;
+    width: 100%;
+    position: relative;
+    min-width: 960px;
+}
+
+#header:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#header-content {
+    background: #ffffff;
+    width: 960px;
+    margin: auto;
+    height: 100%;
+    overflow: auto;
+}
+
+#name {
+    background: #4aaaa5;
+    float: left;
+    height: 50px;
+    line-height: 50px;
+    white-space: nowrap;
+    color: #ffffff;
+    padding: 0px 30px;
+    font-family: Georgia;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.menu {
+    float: right;
+    height: 50px;
+    line-height: 50px;
+    white-space: nowrap;
+    color: #777777;
+    margin: 0px 5px;
+    font-family: Arial;
+}
+
+#main:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#about-me {
+    font-family: Georgia;
+    color: #4aaaa5;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 0px 0px 20px 0px;
+    height: 40px;
+}
+
+hr {
+    background-color: #dddddd;
+    height: 1px;
+    border: 0px;
+    margin-bottom: 20px;
+    margin-top: 1px;
+}
+
+#index-pic {
+    width: 200px;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+#paragraph {
+    font-family: Arial;
+    line-height: 1.5;
+    margin-bottom: 20px
+}
+
+#footer {
+    background: #666666;
+    border-top-style: solid;
+    border-width: 4px;
+    border-color: #4aaaa5;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    margin-top: 100px;
+    z-index: 2;
+}
+
+#footer-box {
+    width: 960px;
+    margin: auto;
+    min width: 960px;
+    height: 50px;
+    margin-top: 100px;
+}
+
+#copyright {
+    width: 960px;
+    margin: auto;
+    text-align: center;
+    font-family: Arial;
+    height: 40px;
+    color: #ffffffb4;
+    padding-top: 15px;
+}
+
+.pic-container {
+    height: 320.5px;
+    width: 320.5px;
+    float: left;
+    margin: 0px 10px 20px 10px;
+}
+
+.pic {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+.bar {
+    background: #4aaaa5;
+    padding: 10px;
+    position: relative;
+    bottom: 50px;
+    text-align: center;
+    color: #ffffff;
+    z-index: 1;
+}
+
+#content-container {
+    width: 960px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 500;
+}
+
+#portfolio {
+    width: 725px;
+    background: #ffffff;
+    margin: auto;
+    color: #777777;
+    border: 2px solid #dddddd;
+    padding: 20px 20px 0px 20px;
+    margin-top: 20px;
+    float: left;
+    margin-bottom: 70px;
+}
+
+#portfolio:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#connect-container {
+    width: 215px;
+    background: #ffffff;
+    margin: auto;
+    color: #777777;
+    border: 2px solid #dddddd;
+    padding: 20px 20px;
+    margin-top: 20px;
+    float: right;
+}
+
+#connect-container:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#social-header {
+    font-family: Georgia;
+    color: #4aaaa5;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 5px 0px 15px 0px;
+    height: 40px;
+}
+
+.social-container {
+    height: 50px;
+    width: 50px;
+    float: left;
+    margin: 0px 3.5px;
+}
+
+.social-pic {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+.input-name {
+    padding-bottom: 10px;
+    font-family: Arial;
+    font-size: 16px;
+}
+input {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 20px;
+    padding: 10px 10px;
+    border: 1px solid #dddddd;
+    font-size: 16px;
+}
+
+textarea {
+    height: 250px;
+    width: 100%;
+    margin-bottom: 20px;
+    font-family: wingdings;
+    font-size: 16px;
+    border: 1px solid #dddddd;
+    padding: 10px;
+}
+
+button {
+    padding: 10px 25px;
+    background: #4aaaa5;
+    color: #ffffff;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+button:hover {
+    border-style: solid;
+    border-color: #4aaaa5;
+    color: #4aaaa5;
+    background: #dddddd;
+}
+
+a {
+    color: #777777;
+}
+a:link {
+    text-decoration: none;
+}
+
+a:hover {
+    color: #4aaaa5;
+}
+
+::placeholder {
+    color: #dddddd;
+}
+
+
+@media only screen and (max-width: 980px) {
+    #header-content {
+        width: 748px;
+    }
+    #content-container {
+        width: 748px;
+    }
+    #portfolio {
+        width: 565px;
+    }
+    #connect-container {
+        width: 163px;
+        padding: 14px;
+        padding-bottom: 20px;
+    }
+    #social-header {
+        height: 46px;
+        padding-top: 13px;
+    }
+    .social-container {
+        height: 40px;
+        width: 40px;
+        margin: 0px 1.7px;
+    }
+    #copyright {
+        width: 748px;
+    }
+    .pic-container {
+        height: 521px;
+        width: 521px;
+        margin: auto;
+        float: none;
+        margin-bottom: 20px;
+    }
+    #index-pic {
+        margin-bottom: 0px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #header-content {
+        width: 620px;
+    }
+    #content-container {
+        width: 620px;
+        margin-top: 70px;
+    }
+    #portfolio {
+        width: 620px;
+        float: none;
+        margin-bottom: 20px;
+    }
+    #connect-container {
+        width: 620px;
+        float: none;
+        padding: 20px 20px;
+        margin-bottom: 70px;
+    }
+    #social-header {
+        padding: 5px 0px 15px 0px;
+        height: 40px;
+    }
+    .social-container {
+        height: 50px;
+        width: 50px;
+        margin: 0px 3.5px;
+    }
+    #copyright {
+        width: 620px;
+    }
+    .pic-container {
+        height: 268px;
+        width: 268px;
+        margin: 0px 10px;
+        float: left;
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    #header {
+        height: 100px;
+        position: static;
+        min-width: 500px;
+    }
+    #header-content {
+        width: 100%;
+    }
+    #copyright {
+        width: 100%;
+        min-width: 500px;
+    }
+    #name {
+        float: none;
+        padding: 0px;
+        text-align: center;
+        position: static;
+    }
+    #portfolio {
+        width: 100%;
+    }
+    #connect-container {
+        margin-bottom: 70px;
+        width: 100%;
+    }
+    .menu {
+        width: 32.6%;
+        margin: 0px;
+        text-align: center;
+    }
+    .spacer {
+        width: 1%
+    }
+    #content-container {
+        margin-top: 20px;
+        width: 100%;
+        min-width: 500px;
+    }
+    .pic-container {
+        float: none;
+        height: 460px;
+        width: 460px;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+}
