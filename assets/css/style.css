@@ -127,10 +127,15 @@ hr {
 }
 
 .pic-container {
-    height: 320.5px;
-    width: 320.5px;
+    height: 330.5px;
+    width: 330.5px;
     float: left;
-    margin: 0px 10px 20px 10px;
+}
+.left {
+    margin: 0px 20px 20px 0px;
+}
+.right {
+    margin: 0px 0px 20px 0px;
 }
 
 .pic {
@@ -196,7 +201,7 @@ hr {
     color: #4aaaa5;
     font-size: 15px;
     font-weight: bold;
-    padding: 5px 0px 15px 0px;
+    padding: 4.5px 0px 15px 0px;
     height: 40px;
 }
 
@@ -276,9 +281,9 @@ a:hover {
         width: 748px;
     }
     #portfolio {
-        width: 565px;
+        width: 513px;
     }
-    #connect-container {
+    /* #connect-container {
         width: 163px;
         padding: 14px;
         padding-bottom: 20px;
@@ -291,13 +296,13 @@ a:hover {
         height: 40px;
         width: 40px;
         margin: 0px 1.7px;
-    }
+    } */
     #copyright {
         width: 748px;
     }
     .pic-container {
-        height: 360px;
-        width: 360px;
+        height: 469px;
+        width: 469px;
         margin: auto;
         float: none;
         margin-bottom: 20px;
@@ -327,7 +332,7 @@ a:hover {
         margin-bottom: 70px;
     }
     #social-header {
-        padding: 5px 0px 15px 0px;
+        padding: 4.5px 0px 15px 0px;
         height: 40px;
     }
     .social-container {
@@ -339,11 +344,15 @@ a:hover {
         width: 620px;
     }
     .pic-container {
-        height: 268px;
-        width: 268px;
-        margin: 0px 10px;
+        height: 278px;
+        width: 278px;
         float: left;
-        margin-bottom: 20px;
+    }
+    .left {
+        margin: 0px 20px 20px 0px;
+    }
+    .right {
+        margin: 0px 0px 20px 0px;
     }
 }
 
@@ -351,14 +360,13 @@ a:hover {
     #header {
         height: 100px;
         position: static;
-        min-width: 400px;
+        min-width: 500px;
     }
     #header-content {
         width: 100%;
     }
     #copyright {
         width: 100%;
-        min-width: 400px;
     }
     #name {
         float: none;
@@ -367,11 +375,11 @@ a:hover {
         position: static;
     }
     #portfolio {
-        width: 100%;
+        width: 480px;
     }
     #connect-container {
         margin-bottom: 70px;
-        width: 100%;
+        width: 480px;
     }
     .menu {
         width: 32.6%;
@@ -384,13 +392,19 @@ a:hover {
     #content-container {
         margin-top: 20px;
         width: 100%;
-        min-width: 400px;
+        padding-right: 10px;
+        padding-left: 10px;
     }
     .pic-container {
         float: none;
-        height: 360px;
-        width: 360px;
+        height: 436px;
+        width: 436px;
         margin: auto;
         margin-bottom: 20px;
+    }
+    #footer {
+        position: sticky;
+        width: 100%;
+        min-width: 500px;
     }
 }
